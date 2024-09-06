@@ -23,6 +23,29 @@ html,body{
     border-radius: 50%;
     background-color: #fff;
 }
+
+.side-ban{
+    width: 3.5vw;
+    height: 10vw;
+    background-color: #fff;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 9999;
+    transform: translateY(-50%);
+}
+
+.side-ban h1{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+.side-ban h5{
+   writing-mode: vertical-lr;
+   transform: rotate(180deg);
+   text-align: center;
+   font-size: 1vw;
+}
 #main{
     width: 100%;
     background-color: #000;
@@ -48,6 +71,25 @@ html,body{
     font-size: 1.7vw;
 }
 
+#nav h4{
+    position: relative;
+}
+
+#nav h4::after{
+    content: " ";
+    position: absolute; 
+    left: 0;
+    bottom: -3px;
+    height: 1.7px;
+    width: 0%;
+    background-color: #fff;
+    transition:  all ease-in-out .3s;
+}
+
+#nav h4:hover::after{
+    width: 100%;
+}
+
 #heading{
     margin-top: 4.3vw;
 }
@@ -65,11 +107,10 @@ html,body{
     width: fit-content;
     overflow: hidden;
 }
-    .bounding-elem{
-        transform: translateY(100%);
-    }
 
-
+.bounding-elem{
+       transform: translateY(100%);
+}
 
  #heading #second-h1{
     margin-left: 15vw;
@@ -89,19 +130,17 @@ html,body{
 }
 
 #small-heading{
-    margin-top:5.2vw;
+    margin-top:6vw;
     padding: 2.5vw;
     display: flex;
     flex-direction: column;
     align-items: end;
-}
-
-#small-heading{
     text-align: right;
     text-transform: uppercase;
-    margin-top: .5vw;
-    font-size: 1vw;
+    font-size: 1.2vw;
+    line-height: 2;
 }
+
 
 #hero-footer{
     display: flex;
@@ -117,7 +156,27 @@ html,body{
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
+    position: relative;
 }
+
+#hero-footer a::after{
+    content: " ";
+    position: absolute; 
+    left: 0;
+    bottom: -3px;
+    height: 1.7px;
+    width: 0%;
+    background-color: #fff;
+    transition:  all ease-in-out .3s;
+}
+
+
+#hero-footer a:hover::after{
+    width: 100%;
+}
+
+
+
 #hero-footer #iconset{
     display: flex;
     gap: 10px;
@@ -232,8 +291,23 @@ html,body{
 
 #subscribe h2{
     font-size: 1.2vw;
+    position: relative;
+    width: fit-content;
 }
 
+#subscribe h2::after{
+    content: " ";
+    position: absolute; 
+    left: 0;
+    bottom: -3px;
+    height: 1.7px;
+    width: 0%;
+    background-color: #fff;
+    transition:  all ease-in-out .3s;
+}
+#subscribe h2:hover::after{
+    width: 100%;
+}
 #footer{
     width: 100%;
     padding: 1vw 3vw;
@@ -259,10 +333,27 @@ html,body{
     justify-content: center;
     align-items:center;
     gap: 40px;
-   
+
 }
 #foot2 a{
     text-decoration: none;
     color: #fff;
+    position: relative;
+}
+
+#foot2 a::after{
+    content: " ";
+    position: absolute; 
+    left: 0;
+    bottom: -3px;
+    height: 1.7px;
+    width: 0%;
+    background-color: #fff;
+    transition:  all ease-in-out .3s;
+}
+
+
+#foot2 a:hover::after{
+    width: 100%;
 }
 

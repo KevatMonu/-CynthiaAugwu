@@ -143,4 +143,5 @@ HoverElem();
 golaMouseFollow();
 FirstTimeAnim();
 golaSkew(); 
-ImgAnim()
+ImgAnim();
+
